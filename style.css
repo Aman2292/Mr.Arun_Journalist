@@ -1,0 +1,560 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
+  background-color: #a1b7f6;
+}
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  z-index: 1000;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  font-family: "Poppins", sans-serif;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: #141d36;
+  border-radius: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  padding: 10px 10px;
+}
+
+.logo img {
+  padding-top: 10px;
+  width: 150px;
+  height: 120px;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500px;
+
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #5383ff;
+}
+
+.button button {
+  background-color: #5383ff;
+  border-radius: 15px;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 10px;
+  margin-right: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button button:hover {
+  background-color: #ffffff;
+  color: rgb(62, 127, 249);
+  transition: all 0.3s ease;
+}
+
+.mainimage {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.mainimage img {
+  width: 100%;
+  height: auto;
+  filter: blur(5px);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #73abf422;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #5383ff;
+  border-radius: 5px;
+}
+
+.text-background-box {
+  position: absolute;
+  left: 5px;
+  top: -20px;
+  width: 600px;
+  height: 270px;
+  background: rgba(0, 0, 0, 0.664);
+  box-shadow: 0 8px 32px 0 rgba(10, 10, 11, 0.37);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  z-index: -1;
+  opacity: 0.7;
+}
+.overlay-text {
+  position: absolute;
+  top: 30%;
+  left: 100px;
+  transform: translate(-50px, -50px);
+  text-align: center;
+  color: white;
+  width: 40%;
+}
+
+.overlay-text h1 {
+  font-family: "Poppins";
+  font-size: 36px;
+  transition: color 0.3s;
+  transition: all 0.3s ease;
+}
+.overlay-text h1:hover {
+  font-family: "Poppins";
+  color: #141d36;
+  cursor: pointer;
+}
+
+.overlay-text p {
+  font-family: "Poppins";
+  font-size: 18.5px;
+  line-height: 1.5;
+  transition: color 0.3s;
+  transition: all 0.3s ease;
+}
+.overlay-text p:hover {
+  font-family: "Poppins";
+  color: #141d36;
+  cursor: pointer;
+}
+.profile-pic img {
+  position: absolute;
+  right: 0;
+  top: 42%;
+  transform: translateY(-50%);
+  height: 500px;
+  width: 850px;
+  filter: blur(0);
+  filter: grayscale(1);
+}
+
+.blog-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 10px;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 15px;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.blog-heading {
+  padding: 15px;
+  font-size: 30px;
+}
+
+.blog-card {
+  width: calc(33.33% - 20px);
+  margin-bottom: 20px;
+  background: rgb(255, 255, 255);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(8.5px);
+  -webkit-backdrop-filter: blur(8.5px);
+  border-radius: 10px;
+  border: 2px solid rgb(0, 0, 0);
+  overflow: hidden;
+ 
+}
+
+.blog-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.blog-content {
+  padding: 10px;
+}
+
+.blog-title {
+  font-size: 20px;
+  padding-left: 5px;
+  margin-bottom: 10px;
+}
+
+.blog-date {
+  font-style: italic;
+  color: #007bff;
+  margin-bottom: 8px;
+}
+
+.blog-description {
+  color: #7e7e7e;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.read-more {
+  background-color: #141d36;
+  box-shadow: 0px 0px 5px #34353a;
+  border: none;
+  color: #ffffff;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.read-more:hover {
+  background-color: #5383ff;
+}
+
+.award-cards {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 15px;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.award-h1 {
+  padding: 20px;
+}
+.award-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.award-card {
+  width: 400px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: rgb(255, 255, 255);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(8.5px);
+  -webkit-backdrop-filter: blur(8.5px);
+  border-radius: 10px;
+  border: 2px solid rgb(0, 0, 0);
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.award-card:hover {
+  transform: scale(1.1);
+}
+
+.award-content {
+  padding: 20px;
+}
+
+.award-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.award-description {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #474748;
+}
+
+/* courses section */
+.course-title {
+  font-family: "Poppins", sans-serif;
+  padding: 15px;
+  font-size: 20px;
+}
+.card-container {
+  padding-left: 90px;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 15px;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.card {
+  flex: 0 0 auto;
+  width: 320px;
+  background: rgb(255, 255, 255);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(8.5px);
+  -webkit-backdrop-filter: blur(8.5px);
+  border-radius: 10px;
+  border: 2px solid rgb(0, 0, 0);
+  width: 290px;
+  height: auto;
+  margin: 10px;
+  overflow: hidden;
+  padding: 5px 5px 2px 2px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  padding: 10px 10px 10px 10px;
+  padding-bottom: 0px;
+}
+
+.content {
+  display: flex;
+  padding: 10px;
+}
+.left-content {
+  text-transform: capitalize;
+  flex: 1;
+}
+.left-content p,
+h3 {
+  padding-bottom: 6px;
+}
+.left-content p {
+  white-space: nowrap;
+}
+
+.right-content {
+  font-size: 15px;
+  flex: 0.5;
+}
+.buy-now-button {
+  background-color: #141d36;
+  box-shadow: 0px 0px 5px #474748;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.buy-now-button:hover {
+  background-color: #5383ff;
+  color: #ffffff;
+  transition: background-color 0.3s ease;
+}
+
+header {
+  color: #141d36;
+  font-size: 20px;
+  padding: 15px;
+}
+
+.content-wrapper {
+  background-color: #141d36;
+  display: flex;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.course-description section {
+  background-color: #141d36;
+}
+.course-description {
+  background-color: #141d36;
+  flex: 0 0 70%;
+  padding: 20px;
+  text-align: left;
+}
+
+.course-description h2 {
+  font-size: 24px;
+  color: #5383ff;
+}
+
+.course-description p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #fffdfd;
+}
+
+.course-description ul {
+  list-style-type: none;
+  padding-left: 20px;
+  color: #fffdfd;
+}
+
+.course-description ul li {
+  font-size: 16px;
+  color: #fffdfd;
+  margin-bottom: 10px;
+}
+
+.course-description ul li:before {
+  content: "•";
+  color: #fffdfd;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+.course-description ul li:hover {
+  padding-left: 20px;
+  color: #007bff;
+  transition: all 0.5s ease;
+}
+.maincard {
+  background: rgb(255, 255, 255);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(8.5px);
+  -webkit-backdrop-filter: blur(8.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 350px;
+  height: 370px;
+  margin: 10px;
+  overflow: hidden;
+  padding: 5px 5px 2px 2px;
+  position: absolute;
+  top: 278%; /* Adjust the distance from the top */
+  right: 60px; /* Adjust the distance from the right */
+}
+
+.maincard img {
+  width: 100%;
+  display: flex;
+  height: auto;
+  border-radius: 15px;
+  padding: 10px 10px 10px 10px;
+  padding-bottom: 0px;
+}
+
+.card-content {
+  padding: 10px;
+}
+
+.card-content h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.card-content p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.enroll-button {
+  background-color: #141d36;
+  box-shadow: 0px 0px 5px #34353a;
+  border: none;
+  color: #ffffff;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.enroll-button:hover {
+  background-color: #5383ff;
+  transition: all 0.3s ease;
+}
+
+/* fotter */
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+ul {
+  list-style: none;
+}
+.footer {
+  background-color: #141d36;
+  padding: 70px 0;
+}
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-col h4 {
+  font-size: 18px;
+  color: #5383ff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #5383ff;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover {
+  color: #5383ff;
+  padding-left: 8px;
+}
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgb(248, 248, 248);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #5383ff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover {
+  color: #ffffff;
+  background-color: #5383ff;
+}
